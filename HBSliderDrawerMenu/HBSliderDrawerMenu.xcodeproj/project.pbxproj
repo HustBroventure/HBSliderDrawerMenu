@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0ACC33A51BEEFA3E009FBD65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33A41BEEFA3E009FBD65 /* main.m */; };
+		0ACC33A81BEEFA3E009FBD65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33A71BEEFA3E009FBD65 /* AppDelegate.m */; };
+		0ACC33AA1BEEFA3E009FBD65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACC33A91BEEFA3E009FBD65 /* Images.xcassets */; };
+		0ACC33AD1BEEFA3E009FBD65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACC33AB1BEEFA3E009FBD65 /* LaunchScreen.xib */; };
+		0ACC33B91BEEFA3E009FBD65 /* HBSliderDrawerMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33B81BEEFA3E009FBD65 /* HBSliderDrawerMenuTests.m */; };
+		0ACC33C51BEEFA83009FBD65 /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33C41BEEFA83009FBD65 /* LeftTableViewController.m */; };
+		0ACC33C81BEEFAB8009FBD65 /* HBSliderDrawerMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33C71BEEFAB8009FBD65 /* HBSliderDrawerMenuController.m */; };
+		0ACC33CB1BEEFB41009FBD65 /* HBMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33CA1BEEFB41009FBD65 /* HBMenuTableViewController.m */; };
+		0ACC33CE1BEEFB5C009FBD65 /* HBCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33CD1BEEFB5C009FBD65 /* HBCenterViewController.m */; };
+		0ACC33D31BEEFB92009FBD65 /* HBSliderMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33D01BEEFB92009FBD65 /* HBSliderMenuController.m */; };
+		0ACC33D41BEEFB92009FBD65 /* HBSliderTopMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33D21BEEFB92009FBD65 /* HBSliderTopMenuController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0ACC33B31BEEFA3E009FBD65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ACC33971BEEFA3E009FBD65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ACC339E1BEEFA3E009FBD65;
+			remoteInfo = HBSliderDrawerMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0ACC339F1BEEFA3E009FBD65 /* HBSliderDrawerMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBSliderDrawerMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACC33A31BEEFA3E009FBD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ACC33A41BEEFA3E009FBD65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0ACC33A61BEEFA3E009FBD65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0ACC33A71BEEFA3E009FBD65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0ACC33A91BEEFA3E009FBD65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0ACC33AC1BEEFA3E009FBD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0ACC33B21BEEFA3E009FBD65 /* HBSliderDrawerMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HBSliderDrawerMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACC33B71BEEFA3E009FBD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ACC33B81BEEFA3E009FBD65 /* HBSliderDrawerMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBSliderDrawerMenuTests.m; sourceTree = "<group>"; };
+		0ACC33C31BEEFA83009FBD65 /* LeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewController.h; sourceTree = "<group>"; };
+		0ACC33C41BEEFA83009FBD65 /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
+		0ACC33C61BEEFAB8009FBD65 /* HBSliderDrawerMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSliderDrawerMenuController.h; sourceTree = "<group>"; };
+		0ACC33C71BEEFAB8009FBD65 /* HBSliderDrawerMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSliderDrawerMenuController.m; sourceTree = "<group>"; };
+		0ACC33C91BEEFB41009FBD65 /* HBMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBMenuTableViewController.h; sourceTree = "<group>"; };
+		0ACC33CA1BEEFB41009FBD65 /* HBMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBMenuTableViewController.m; sourceTree = "<group>"; };
+		0ACC33CC1BEEFB5C009FBD65 /* HBCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCenterViewController.h; sourceTree = "<group>"; };
+		0ACC33CD1BEEFB5C009FBD65 /* HBCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCenterViewController.m; sourceTree = "<group>"; };
+		0ACC33CF1BEEFB92009FBD65 /* HBSliderMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSliderMenuController.h; sourceTree = "<group>"; };
+		0ACC33D01BEEFB92009FBD65 /* HBSliderMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSliderMenuController.m; sourceTree = "<group>"; };
+		0ACC33D11BEEFB92009FBD65 /* HBSliderTopMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSliderTopMenuController.h; sourceTree = "<group>"; };
+		0ACC33D21BEEFB92009FBD65 /* HBSliderTopMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSliderTopMenuController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ACC339C1BEEFA3E009FBD65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ACC33AF1BEEFA3E009FBD65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ACC33961BEEFA3E009FBD65 = {
+			isa = PBXGroup;
+			children = (
+				0ACC33A11BEEFA3E009FBD65 /* HBSliderDrawerMenu */,
+				0ACC33B51BEEFA3E009FBD65 /* HBSliderDrawerMenuTests */,
+				0ACC33A01BEEFA3E009FBD65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0ACC33A01BEEFA3E009FBD65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC339F1BEEFA3E009FBD65 /* HBSliderDrawerMenu.app */,
+				0ACC33B21BEEFA3E009FBD65 /* HBSliderDrawerMenuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0ACC33A11BEEFA3E009FBD65 /* HBSliderDrawerMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC33CF1BEEFB92009FBD65 /* HBSliderMenuController.h */,
+				0ACC33D01BEEFB92009FBD65 /* HBSliderMenuController.m */,
+				0ACC33D11BEEFB92009FBD65 /* HBSliderTopMenuController.h */,
+				0ACC33D21BEEFB92009FBD65 /* HBSliderTopMenuController.m */,
+				0ACC33C21BEEFA4A009FBD65 /* HBSliderMenu */,
+				0ACC33A61BEEFA3E009FBD65 /* AppDelegate.h */,
+				0ACC33A71BEEFA3E009FBD65 /* AppDelegate.m */,
+				0ACC33A91BEEFA3E009FBD65 /* Images.xcassets */,
+				0ACC33AB1BEEFA3E009FBD65 /* LaunchScreen.xib */,
+				0ACC33A21BEEFA3E009FBD65 /* Supporting Files */,
+				0ACC33C31BEEFA83009FBD65 /* LeftTableViewController.h */,
+				0ACC33C41BEEFA83009FBD65 /* LeftTableViewController.m */,
+			);
+			path = HBSliderDrawerMenu;
+			sourceTree = "<group>";
+		};
+		0ACC33A21BEEFA3E009FBD65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC33A31BEEFA3E009FBD65 /* Info.plist */,
+				0ACC33A41BEEFA3E009FBD65 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0ACC33B51BEEFA3E009FBD65 /* HBSliderDrawerMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC33B81BEEFA3E009FBD65 /* HBSliderDrawerMenuTests.m */,
+				0ACC33B61BEEFA3E009FBD65 /* Supporting Files */,
+			);
+			path = HBSliderDrawerMenuTests;
+			sourceTree = "<group>";
+		};
+		0ACC33B61BEEFA3E009FBD65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC33B71BEEFA3E009FBD65 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0ACC33C21BEEFA4A009FBD65 /* HBSliderMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC33C61BEEFAB8009FBD65 /* HBSliderDrawerMenuController.h */,
+				0ACC33C71BEEFAB8009FBD65 /* HBSliderDrawerMenuController.m */,
+				0ACC33C91BEEFB41009FBD65 /* HBMenuTableViewController.h */,
+				0ACC33CA1BEEFB41009FBD65 /* HBMenuTableViewController.m */,
+				0ACC33CC1BEEFB5C009FBD65 /* HBCenterViewController.h */,
+				0ACC33CD1BEEFB5C009FBD65 /* HBCenterViewController.m */,
+			);
+			path = HBSliderMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0ACC339E1BEEFA3E009FBD65 /* HBSliderDrawerMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ACC33BC1BEEFA3E009FBD65 /* Build configuration list for PBXNativeTarget "HBSliderDrawerMenu" */;
+			buildPhases = (
+				0ACC339B1BEEFA3E009FBD65 /* Sources */,
+				0ACC339C1BEEFA3E009FBD65 /* Frameworks */,
+				0ACC339D1BEEFA3E009FBD65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HBSliderDrawerMenu;
+			productName = HBSliderDrawerMenu;
+			productReference = 0ACC339F1BEEFA3E009FBD65 /* HBSliderDrawerMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0ACC33B11BEEFA3E009FBD65 /* HBSliderDrawerMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ACC33BF1BEEFA3E009FBD65 /* Build configuration list for PBXNativeTarget "HBSliderDrawerMenuTests" */;
+			buildPhases = (
+				0ACC33AE1BEEFA3E009FBD65 /* Sources */,
+				0ACC33AF1BEEFA3E009FBD65 /* Frameworks */,
+				0ACC33B01BEEFA3E009FBD65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ACC33B41BEEFA3E009FBD65 /* PBXTargetDependency */,
+			);
+			name = HBSliderDrawerMenuTests;
+			productName = HBSliderDrawerMenuTests;
+			productReference = 0ACC33B21BEEFA3E009FBD65 /* HBSliderDrawerMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0ACC33971BEEFA3E009FBD65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = HustBroventurre;
+				TargetAttributes = {
+					0ACC339E1BEEFA3E009FBD65 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					0ACC33B11BEEFA3E009FBD65 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 0ACC339E1BEEFA3E009FBD65;
+					};
+				};
+			};
+			buildConfigurationList = 0ACC339A1BEEFA3E009FBD65 /* Build configuration list for PBXProject "HBSliderDrawerMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0ACC33961BEEFA3E009FBD65;
+			productRefGroup = 0ACC33A01BEEFA3E009FBD65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0ACC339E1BEEFA3E009FBD65 /* HBSliderDrawerMenu */,
+				0ACC33B11BEEFA3E009FBD65 /* HBSliderDrawerMenuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ACC339D1BEEFA3E009FBD65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACC33AD1BEEFA3E009FBD65 /* LaunchScreen.xib in Resources */,
+				0ACC33AA1BEEFA3E009FBD65 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ACC33B01BEEFA3E009FBD65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ACC339B1BEEFA3E009FBD65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACC33D31BEEFB92009FBD65 /* HBSliderMenuController.m in Sources */,
+				0ACC33C81BEEFAB8009FBD65 /* HBSliderDrawerMenuController.m in Sources */,
+				0ACC33CB1BEEFB41009FBD65 /* HBMenuTableViewController.m in Sources */,
+				0ACC33A81BEEFA3E009FBD65 /* AppDelegate.m in Sources */,
+				0ACC33C51BEEFA83009FBD65 /* LeftTableViewController.m in Sources */,
+				0ACC33A51BEEFA3E009FBD65 /* main.m in Sources */,
+				0ACC33CE1BEEFB5C009FBD65 /* HBCenterViewController.m in Sources */,
+				0ACC33D41BEEFB92009FBD65 /* HBSliderTopMenuController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ACC33AE1BEEFA3E009FBD65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACC33B91BEEFA3E009FBD65 /* HBSliderDrawerMenuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0ACC33B41BEEFA3E009FBD65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ACC339E1BEEFA3E009FBD65 /* HBSliderDrawerMenu */;
+			targetProxy = 0ACC33B31BEEFA3E009FBD65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0ACC33AB1BEEFA3E009FBD65 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ACC33AC1BEEFA3E009FBD65 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0ACC33BA1BEEFA3E009FBD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0ACC33BB1BEEFA3E009FBD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0ACC33BD1BEEFA3E009FBD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HBSliderDrawerMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0ACC33BE1BEEFA3E009FBD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HBSliderDrawerMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0ACC33C01BEEFA3E009FBD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HBSliderDrawerMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HBSliderDrawerMenu.app/HBSliderDrawerMenu";
+			};
+			name = Debug;
+		};
+		0ACC33C11BEEFA3E009FBD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HBSliderDrawerMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HBSliderDrawerMenu.app/HBSliderDrawerMenu";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ACC339A1BEEFA3E009FBD65 /* Build configuration list for PBXProject "HBSliderDrawerMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ACC33BA1BEEFA3E009FBD65 /* Debug */,
+				0ACC33BB1BEEFA3E009FBD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ACC33BC1BEEFA3E009FBD65 /* Build configuration list for PBXNativeTarget "HBSliderDrawerMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ACC33BD1BEEFA3E009FBD65 /* Debug */,
+				0ACC33BE1BEEFA3E009FBD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0ACC33BF1BEEFA3E009FBD65 /* Build configuration list for PBXNativeTarget "HBSliderDrawerMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ACC33C01BEEFA3E009FBD65 /* Debug */,
+				0ACC33C11BEEFA3E009FBD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0ACC33971BEEFA3E009FBD65 /* Project object */;
+}
