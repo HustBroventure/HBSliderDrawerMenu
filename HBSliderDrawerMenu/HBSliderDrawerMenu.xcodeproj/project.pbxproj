@@ -13,10 +13,8 @@
 		0ACC33AD1BEEFA3E009FBD65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACC33AB1BEEFA3E009FBD65 /* LaunchScreen.xib */; };
 		0ACC33B91BEEFA3E009FBD65 /* HBSliderDrawerMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33B81BEEFA3E009FBD65 /* HBSliderDrawerMenuTests.m */; };
 		0ACC33C51BEEFA83009FBD65 /* LeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33C41BEEFA83009FBD65 /* LeftTableViewController.m */; };
-		0ACC33C81BEEFAB8009FBD65 /* HBSliderDrawerMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33C71BEEFAB8009FBD65 /* HBSliderDrawerMenuController.m */; };
 		0ACC33CB1BEEFB41009FBD65 /* HBMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33CA1BEEFB41009FBD65 /* HBMenuTableViewController.m */; };
 		0ACC33CE1BEEFB5C009FBD65 /* HBCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33CD1BEEFB5C009FBD65 /* HBCenterViewController.m */; };
-		0ACC33D31BEEFB92009FBD65 /* HBSliderMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33D01BEEFB92009FBD65 /* HBSliderMenuController.m */; };
 		0ACC33D41BEEFB92009FBD65 /* HBSliderTopMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33D21BEEFB92009FBD65 /* HBSliderTopMenuController.m */; };
 /* End PBXBuildFile section */
 
@@ -43,14 +41,10 @@
 		0ACC33B81BEEFA3E009FBD65 /* HBSliderDrawerMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBSliderDrawerMenuTests.m; sourceTree = "<group>"; };
 		0ACC33C31BEEFA83009FBD65 /* LeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewController.h; sourceTree = "<group>"; };
 		0ACC33C41BEEFA83009FBD65 /* LeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewController.m; sourceTree = "<group>"; };
-		0ACC33C61BEEFAB8009FBD65 /* HBSliderDrawerMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSliderDrawerMenuController.h; sourceTree = "<group>"; };
-		0ACC33C71BEEFAB8009FBD65 /* HBSliderDrawerMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSliderDrawerMenuController.m; sourceTree = "<group>"; };
 		0ACC33C91BEEFB41009FBD65 /* HBMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBMenuTableViewController.h; sourceTree = "<group>"; };
 		0ACC33CA1BEEFB41009FBD65 /* HBMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBMenuTableViewController.m; sourceTree = "<group>"; };
 		0ACC33CC1BEEFB5C009FBD65 /* HBCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCenterViewController.h; sourceTree = "<group>"; };
 		0ACC33CD1BEEFB5C009FBD65 /* HBCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCenterViewController.m; sourceTree = "<group>"; };
-		0ACC33CF1BEEFB92009FBD65 /* HBSliderMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSliderMenuController.h; sourceTree = "<group>"; };
-		0ACC33D01BEEFB92009FBD65 /* HBSliderMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSliderMenuController.m; sourceTree = "<group>"; };
 		0ACC33D11BEEFB92009FBD65 /* HBSliderTopMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSliderTopMenuController.h; sourceTree = "<group>"; };
 		0ACC33D21BEEFB92009FBD65 /* HBSliderTopMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSliderTopMenuController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,8 +88,6 @@
 		0ACC33A11BEEFA3E009FBD65 /* HBSliderDrawerMenu */ = {
 			isa = PBXGroup;
 			children = (
-				0ACC33CF1BEEFB92009FBD65 /* HBSliderMenuController.h */,
-				0ACC33D01BEEFB92009FBD65 /* HBSliderMenuController.m */,
 				0ACC33D11BEEFB92009FBD65 /* HBSliderTopMenuController.h */,
 				0ACC33D21BEEFB92009FBD65 /* HBSliderTopMenuController.m */,
 				0ACC33C21BEEFA4A009FBD65 /* HBSliderMenu */,
@@ -139,8 +131,6 @@
 		0ACC33C21BEEFA4A009FBD65 /* HBSliderMenu */ = {
 			isa = PBXGroup;
 			children = (
-				0ACC33C61BEEFAB8009FBD65 /* HBSliderDrawerMenuController.h */,
-				0ACC33C71BEEFAB8009FBD65 /* HBSliderDrawerMenuController.m */,
 				0ACC33C91BEEFB41009FBD65 /* HBMenuTableViewController.h */,
 				0ACC33CA1BEEFB41009FBD65 /* HBMenuTableViewController.m */,
 				0ACC33CC1BEEFB5C009FBD65 /* HBCenterViewController.h */,
@@ -248,8 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ACC33D31BEEFB92009FBD65 /* HBSliderMenuController.m in Sources */,
-				0ACC33C81BEEFAB8009FBD65 /* HBSliderDrawerMenuController.m in Sources */,
 				0ACC33CB1BEEFB41009FBD65 /* HBMenuTableViewController.m in Sources */,
 				0ACC33A81BEEFA3E009FBD65 /* AppDelegate.m in Sources */,
 				0ACC33C51BEEFA83009FBD65 /* LeftTableViewController.m in Sources */,
@@ -442,6 +430,7 @@
 				0ACC33BE1BEEFA3E009FBD65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0ACC33BF1BEEFA3E009FBD65 /* Build configuration list for PBXNativeTarget "HBSliderDrawerMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +439,7 @@
 				0ACC33C11BEEFA3E009FBD65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

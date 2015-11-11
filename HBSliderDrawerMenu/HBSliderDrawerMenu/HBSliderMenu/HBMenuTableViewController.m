@@ -7,7 +7,8 @@
 //
 
 #import "HBMenuTableViewController.h"
-
+#import "HBSliderTopMenuController.h"
+#import "HBCenterViewController.h"
 @interface HBMenuTableViewController ()
 @property (nonatomic, strong) NSArray* data;
 @end
@@ -40,7 +41,25 @@
 
     return cell;
 }
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
 
+
+    HBSliderTopMenuController* slider =  ((HBSliderTopMenuController*) self.parentViewController);
+    HBCenterViewController* centVc = [HBCenterViewController new];
+    UINavigationController* nav = [[UINavigationController alloc]initWithRootViewController:centVc];
+    if (indexPath.row == 0) {
+ centVc.view.backgroundColor = [UIColor orangeColor];
+    }
+    else{
+ centVc.view.backgroundColor = [UIColor purpleColor];
+    }
+
+
+    
+    slider.currentCenterViewController = nav;
+    [slider showCenter];
+}
 
 
 @end

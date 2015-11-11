@@ -7,7 +7,7 @@
 //
 
 #import "HBCenterViewController.h"
-
+#import "HBSliderTopMenuController.h"
 @interface HBCenterViewController ()
 
 @end
@@ -16,11 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor orangeColor];
+    UIBarButtonItem* item = [[UIBarButtonItem alloc]initWithTitle:@"菜单" style:UIBarButtonItemStylePlain target:self action:@selector(leftClick)];
+    self.navigationItem.leftBarButtonItem = item;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+-(void)leftClick
+{
+   HBSliderTopMenuController* slider =  ((HBSliderTopMenuController*) self.navigationController.parentViewController);
+    
+
+    [slider showLeftMenu];
 }
 
 

@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "HBSliderTopMenuController.h"
+#import "HBMenuTableViewController.h"
+#import "HBCenterViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,6 +21,16 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+
+    HBMenuTableViewController* leftMenuVC = [HBMenuTableViewController new];
+    HBCenterViewController* centVc = [HBCenterViewController new];
+    UINavigationController* nav = [[UINavigationController alloc]initWithRootViewController:centVc];
+
+    HBSliderTopMenuController* sliderVc = [[HBSliderTopMenuController alloc]initWithLeftViewController:leftMenuVC rightViewController:nil mainViewController:nav];
+
+    self.window.rootViewController = sliderVc;
+
+
     [self.window makeKeyAndVisible];
     return YES;
 }

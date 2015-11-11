@@ -14,6 +14,7 @@
     //左侧菜单VC
 @property (nonatomic, strong) UIViewController* leftMenuViewController;
 @property (nonatomic, strong) UIViewController* rightMenuViewController;
+@property (nonatomic, strong) UIViewController* currentCenterViewController;
 
 @property (nonatomic, strong) NSArray* contentViewControllersForLeft;
 @property (nonatomic, strong) NSArray* contentViewControllersForRight;
@@ -24,9 +25,11 @@
 -(instancetype)initWithLeftViewController:(UIViewController*)leftViewController rightViewController:(UIViewController*) rightViewController mainViewController:(UIViewController*)mainViewController;
 
     //显示左侧菜单
-- (void)showLeft;
+- (void)showLeftMenu;
+- (void)showRightMenu;
+
     //显示主界面
-- (void)showHome;
+- (void)showCenter;
 
     //移除滑动手势
 -(void)removePanGesture;
