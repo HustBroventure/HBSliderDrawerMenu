@@ -19,6 +19,8 @@
     self.view.backgroundColor = [UIColor orangeColor];
     UIBarButtonItem* item = [[UIBarButtonItem alloc]initWithTitle:@"菜单" style:UIBarButtonItemStylePlain target:self action:@selector(leftClick)];
     self.navigationItem.leftBarButtonItem = item;
+    UIBarButtonItem* item2 = [[UIBarButtonItem alloc]initWithTitle:@"菜单" style:UIBarButtonItemStylePlain target:self action:@selector(rightClick)];
+    self.navigationItem.rightBarButtonItem = item2;
 }
 
 -(void)leftClick
@@ -28,7 +30,13 @@
 
     [slider showLeftMenu];
 }
-
+-(void)rightClick
+{
+    HBSliderTopMenuController* slider =  ((HBSliderTopMenuController*) self.navigationController.parentViewController);
+    
+    
+    [slider showRightMenu];
+}
 
 
 @end

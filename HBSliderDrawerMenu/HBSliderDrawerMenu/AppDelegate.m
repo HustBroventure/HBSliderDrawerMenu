@@ -23,10 +23,13 @@
     self.window.backgroundColor = [UIColor whiteColor];
 
     HBMenuTableViewController* leftMenuVC = [HBMenuTableViewController new];
+     HBMenuTableViewController* rightMenuVC = [HBMenuTableViewController new];
+    rightMenuVC.view.backgroundColor = [UIColor greenColor];
+    leftMenuVC.view.backgroundColor = [UIColor blueColor];
     HBCenterViewController* centVc = [HBCenterViewController new];
     UINavigationController* nav = [[UINavigationController alloc]initWithRootViewController:centVc];
 
-    HBSliderTopMenuController* sliderVc = [[HBSliderTopMenuController alloc]initWithLeftViewController:leftMenuVC rightViewController:nil mainViewController:nav];
+    HBSliderTopMenuController* sliderVc = [[HBSliderTopMenuController alloc]initWithLeftViewController:leftMenuVC rightViewController:rightMenuVC mainViewController:nav];
 
     self.window.rootViewController = sliderVc;
 

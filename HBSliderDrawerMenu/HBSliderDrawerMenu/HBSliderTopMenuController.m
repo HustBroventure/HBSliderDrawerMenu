@@ -9,7 +9,7 @@
 #import "HBSliderTopMenuController.h"
 #define LEFT_OFFSET_FACTOR (0.8)
 #define RIGHT_OFFSET_FACTOR (0.8)
-#define ANIMIATION_TIME (0.5)
+#define ANIMIATION_TIME (0.3)
 
 
 @interface HBSliderTopMenuController ()<UIGestureRecognizerDelegate>
@@ -28,6 +28,10 @@
     CGFloat _width;
     CGFloat _leftOffset;
     CGFloat _rightoffset;
+        //手势开始时，初始的位置
+    CGFloat _orginX;
+    BOOL _isShowLeft;
+    BOOL _isShowRight;
 
 }
 #pragma mark - public methords
@@ -37,44 +41,53 @@
         self.leftMenuViewController = leftViewController;
         self.rightMenuViewController = rightViewController;
         self.currentCenterViewController = mainViewController;
+        self.view.backgroundColor = [UIColor redColor];
 
     }
     return self;
 }
 -(void)showLeftMenu
 {
+    
+    [self.view insertSubview:self.leftView belowSubview:self.mainView];
     [self.mainView addSubview:self.coverView];
     CGRect frame = self.mainView.frame;
     frame.origin.x = _width*LEFT_OFFSET_FACTOR;
 
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:ANIMIATION_TIME animations:^{
         self.mainView.frame = frame;
     } completion:^(BOOL finished) {
 
-
+        
             }];
+    _isShowLeft = YES;
 }
 -(void)showCenter
 {
+     _isShowLeft = NO;
+    _isShowRight = NO;
     CGRect frame = self.mainView.frame;
     frame.origin.x = 0;
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:ANIMIATION_TIME animations:^{
         self.mainView.frame = frame;
 
     } completion:^(BOOL finished) {
         [self.coverView removeFromSuperview];
     }];
 }
--(void)showRight
+-(void)showRightMenu
 {
+    [self.view insertSubview:self.rightView belowSubview:self.mainView];
+    [self.mainView addSubview:self.coverView];
     CGRect frame = self.mainView.frame;
     frame.origin.x = -_width*RIGHT_OFFSET_FACTOR;
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:ANIMIATION_TIME animations:^{
         self.mainView.frame = frame;
-
 
     } completion:^(BOOL finished) {
     }];
+    _isShowRight = YES;
+
 }
 
 #pragma mark - vc-life-circle
@@ -119,7 +132,7 @@
     UIPanGestureRecognizer* pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panEvent:)];
     pan.delegate = self;
     self.panGesture = pan;
-        // [self.leftView addGestureRecognizer:pan];
+    
     [self.mainView addGestureRecognizer:self.panGesture];
 
 }
@@ -157,7 +170,59 @@
 #pragma mark - event methords
 -(void)panEvent:(UIPanGestureRecognizer*)panGesture
 {
+    CGFloat deltaX = [panGesture translationInView:self.view].x;
+    CGFloat ve = [panGesture velocityInView:self.view ].x;
+    if (_orginX == 0 && deltaX > 0 ) {
+        _isShowLeft = YES;
+        [self.view insertSubview:self.leftView belowSubview:self.mainView];
 
+    }
+    else if(_orginX == 0 && deltaX < 0){
+//        _isShowRight = YES;
+//        [self.view insertSubview:self.rightView belowSubview:self.mainView];
+
+    }
+    if (panGesture.state == UIGestureRecognizerStateBegan) {
+         _orginX = self.mainView.frame.origin.x;
+    }else if(panGesture.state == UIGestureRecognizerStateEnded){
+        if (1) {
+            if (ve>0) {
+                [self showLeftMenu];
+            }else{
+                [self showCenter];
+            }
+            
+        }
+//        if (_isShowLeft) {
+//            [self showLeftMenu];
+//        }
+    }else{
+        if (_isShowLeft) {
+            CGRect frame = self.mainView.frame;
+            frame.origin.x = _orginX + deltaX;
+            if (frame.origin.x < 0 ) {
+                frame.origin.x  = 0;
+            }
+            if (frame.origin.x > self.leftView.frame.size.width) {
+                frame.origin.x = self.leftView.frame.size.width;
+            }
+            self.mainView.frame =  frame;
+
+        }
+//        if (_isShowRight) {
+//            CGRect frame = self.mainView.frame;
+//            frame.origin.x = _orginX + deltaX;
+//            if (frame.origin.x < self.rightView.frame.size.width ) {
+//                frame.origin.x =self.rightView.frame.size.width;
+//            }
+//            if (frame.origin.x > 0) {
+//                frame.origin.x = 0;
+//            }
+//            self.mainView.frame =  frame;
+//            
+//        }
+
+    }
 }
 
 #pragma mark - delegate methords
